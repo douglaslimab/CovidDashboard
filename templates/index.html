@@ -9,9 +9,19 @@
 </head>
 <body>
     <ul class="main-card">
-        <h2>Country: {{data.Country}}</h2>
-        <p>Confirmed Cases: {{data.Confirmed}}</p>
+        <h2 id="title">Country: {{data.Country}}</h2>
         <p>Deaths: {{data.Deaths}}</p>
+        <p>Confirmed Cases: {{data.Confirmed}}</p>
     </ul>
+    <div class="map hidden" id="map">
+        <canvas class="map-app" id=map-app></canvas>
+    </div>
+    <button class="map-btn" id="map-btn">></button>
+
+
+    <script src="/static/js/app.js"></script>
+    <script async
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBwa_VfKb4tg-XypdKerbp9AKAbabjlVI&callback=initMap">
+    </script>
 </body>
 </html>
