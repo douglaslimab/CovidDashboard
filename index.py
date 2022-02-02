@@ -15,8 +15,9 @@ def sumary(country):
 
 @app.route('/<country>/geo')
 def geo(country):
-    response_geo = get_geo(country)
-    return response_geo
+    response = get_geo(country)
+    response.update(get_summary(country))
+    return response
 
 
 if __name__ == "__main__":

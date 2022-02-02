@@ -29,6 +29,9 @@ body{
     background-color: #2f7;
 }
 
+.data-row{
+    display: flex;
+}
 h2{
     font-size: 3rem;
 }
@@ -50,9 +53,33 @@ p{
     transition: all 300ms ease-in-out;
 }
 
+.graph{
+    height: 50%;
+    width: 70vh;
+
+    background-color: #fff;
+
+    transition: all 300ms ease-in-out;
+}
 .hidden{
     visibility: hidden;
     width: 0;
+}
+
+.graph-btn{
+    height: 50%;
+    width: 1rem;
+    
+    color: #333;
+    background-color: #2d7;
+    border: none;
+
+    transition: all 300ms ease-in-out;
+}
+
+.graph-btn:hover{
+    color: #ccc;
+    background-color: #2a7;
 }
 
 .map-btn{
@@ -61,7 +88,7 @@ p{
     border-radius: 0 10px 10px 0;
 
     color: #333;
-    background-color: #2f7;
+    background-color: #2b7;
     border: none;
 
     transition: all 300ms ease-in-out;
@@ -76,17 +103,25 @@ p{
     body{
         flex-direction: column;
     }
+
     .main-card{
         height: 40%;
         border-radius: 10px 10px 0 0;
     }
+    
+    .graph-btn{
+        height: 1rem;
+        width: 70vh;
+
+        color: #ccc;
+        background-color: #1a4;
+    }
+
     .map-btn{
         height: 1rem;
         width: 70vh;
         border-radius: 0 0 10px 10px;
-    }
-    
-    .map-btn{
+
         color: #ccc;
         background-color: #2a7;
     }

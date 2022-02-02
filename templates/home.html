@@ -8,6 +8,37 @@
     <title>Covid Dashboard</title>
 </head>
 <body>
-    <h1>Home</h1>
+    <ul class="main-card">
+        <h2 id="country">Country</h2>
+        <div class="data-row">
+            <p>Deaths: </p>
+            <p id="deaths"> </p>
+        </div>
+        <div class="data-row">
+            <p>Confirmed: </p>
+            <p id="confirmed"> </p>
+        </div>
+        <form action="">
+            <input type="text" class="entry-country" id="entry-country" placeholder="Enter the Country here">
+            <button type="button" class="submit" id="submit">Submit</button>
+        </form>
+    </ul>
+
+    <div class="map hidden" id="map">
+        <canvas class="map-app" id=map-app></canvas>
+    </div>
+
+    <div class="graph hidden" id="graph">
+        <canvas></canvas>
+    </div>
+
+    <button type="button" class="graph-btn" id="graph-btn">></button>
+    <button type="button" class="map-btn" id="map-btn">></button>
+
+
+    <script src="/static/js/app.js"></script>
+    <script async
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBwa_VfKb4tg-XypdKerbp9AKAbabjlVI&callback=initMap">
+    </script>
 </body>
 </html>
